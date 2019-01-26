@@ -22,8 +22,32 @@
             <input type="radio" name="breed" class="category__item breed_curl" value="#0000ff" id="breed_curl" hidden/>
             <input type="radio" name="breed" class="category__item breed_bengali" value="#0000ff" id="breed_bengali" hidden/>
             <input type="radio" name="breed" class="category__item breed_none" value="#0000ff" id="breed_none" hidden/>
+            <input type="radio" name="age-from" value="0" id="age-from-0" hidden checked />
+            <input type="radio" name="age-from" value="1" id="age-from-1" hidden />
+            <input type="radio" name="age-from" value="2" id="age-from-2" hidden />
+            <input type="radio" name="age-to" value="3" id="age-to-3" hidden />
+            <input type="radio" name="age-to" value="4" id="age-to-4" hidden />
+            <input type="radio" name="age-to" value="5" id="age-to-5" hidden checked />
+
             <div hidden class="murmarket__menu menu">
                 <h3 class="menu__caption">Возраст</h3>
+                <div class="menu__slider slider">
+                    <span class="slider__control"></span>
+                    <label class="slider__label" for="age-from-0"></label>
+                    <label class="slider__label" for="age-from-1"></label>
+                    <label class="slider__label" for="age-from-2"></label>
+                    <label class="slider__label" for="age-to-3"></label>
+                    <label class="slider__label" for="age-to-4"></label>
+                    <label class="slider__label" for="age-to-5"></label>
+                </div>
+                <div class="menu__slider-captions slider-captions">
+                    <label class="slider-captions__item" for="age-from-0">0</label>
+                    <label class="slider-captions__item" for="age-from-1">1</label>
+                    <label class="slider-captions__item" for="age-from-2">2</label>
+                    <label class="slider-captions__item" for="age-to-3">3</label>
+                    <label class="slider-captions__item" for="age-to-4">4</label>
+                    <label class="slider-captions__item" for="age-to-5">5</label>
+                </div>
                 <h3 class="menu__caption category">Порода</h3>
                 <div class="category__items">
                     <label for="breed_scotch" class="category__item-name breed_scotch">Шотландцы</label>

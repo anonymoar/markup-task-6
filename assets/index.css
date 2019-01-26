@@ -221,6 +221,64 @@ body
         min-height: calc(100vh - 80px);
     }
 
+    .menu__slider
+    {
+        margin-top: 30px;
+    }
+
+    .slider
+    {
+        width: 188px;
+        height: 2px;
+        display: flex;
+        background-color: #81b5fb;
+    }
+
+    .slider__label
+    {
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        border-radius: 50%;
+        background: #fff;
+        border: 1px solid #999;
+    }
+
+    .slider__label + .slider__label
+    {
+        margin-left: 16px;
+    }
+
+    input[id='age-from-0']:checked ~ .menu .slider__label[for='age-from-0'],
+    input[id='age-from-1']:checked ~ .menu .slider__label[for='age-from-1'],
+    input[id='age-from-2']:checked ~ .menu .slider__label[for='age-from-2'],
+    input[id='age-to-3']:checked ~ .menu .slider__label[for='age-to-3'],
+    input[id='age-to-4']:checked ~ .menu .slider__label[for='age-to-4'],
+    input[id='age-to-5']:checked ~ .menu .slider__label[for='age-to-5']
+    {
+        transform: scale(1.4);
+        border: 1px solid #e33f46;
+    }
+
+    .menu__slider-captions
+    {
+        margin-top: 14px;
+    }
+
+    .slider-captions__item
+    {
+        display: inline-block;
+        text-align: center;
+        font-size: 14px;
+        color: #333;
+        width: 18px;
+    }
+
+    .slider-captions__item + .slider-captions__item
+    {
+        margin-left: 13px;
+    }
+
     .cat-cards
     {
         grid-row-start: 1;
