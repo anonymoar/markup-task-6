@@ -218,8 +218,11 @@ body
     .cat-cards
     {
         grid-row-start: 1;
-        grid-column: 1 / 3; /* не понимаю как сделать чтобы было по
-        2 котика в ряд */
+        grid-column: 1 / 3;
+        display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cat-card
@@ -324,6 +327,11 @@ body
     {
         display: block;
         grid-column: 3;
+    }
+
+    .menu__caption
+    {
+        margin-top: 30px;
     }
 
     .category__items
