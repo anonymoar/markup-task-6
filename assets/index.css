@@ -92,10 +92,9 @@ body
 
 .murmarket__footer
 {
-    padding: 20px;
-    border-top: 1px solid #e5e5e5;
     display: grid;
-    padding-left: 40px;
+    padding: 20px 40px;
+    border-top: 1px solid #e5e5e5;
 }
 
 .footer__text
@@ -120,12 +119,22 @@ body
     color: #8a8a8a;
 }
 
+.contact
+{
+    display: flex;
+    align-items: center;
+}
+
 .contact__icon
 {
     width: 22px;
     height: 22px;
-    align-items: center;
     margin-right: 5px;
+}
+
+.contact__link
+{
+    line-height: 22px;
 }
 
 .footer__signature
@@ -275,40 +284,46 @@ body
         align-items: center;
     }
 
+    .footer__mail-icon
+    {
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin-right: 5px;
+    }
+
     .footer__text
     {
         margin-right: 20px;
     }
 
-    .contact-list__contact .contact-list__contact::before
-    {
-        content: '♥ '; /* почему то не работает*/
-    }
-
     .contact-list__contact
     {
-        display: inline;
+        margin-top: 2px;
+        position: relative;
+        display: inline-flex;
+    }
+
+    .contact-list__contact + .contact-list__contact
+    {
+        margin-left: 30px;
+    }
+
+    .contact-list__contact + .contact-list__contact::before
+    {
+        content: '♥';
+        position: absolute;
+        left: -24px;
     }
 
     .contact__icon
     {
-        display: block;
-    }
-
-    .contact-list__contact .contact__icon
-    {
         display: none;
-    }
-
-    .contact__link
-    {
-        margin-right: 20px;
     }
 
     .footer__signature
     {
-        margin: 0;
-        justify-self: flex-end; /* почему то не рабоатет*/
+        margin: 0 0 0 auto;
     }
 
     .murmarket__menu
