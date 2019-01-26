@@ -38,7 +38,7 @@ body
 
 .cat-cards
 {
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .cat-card
@@ -144,15 +144,9 @@ body
 
 @media only screen and (max-width: 730px)
 {
-    .cat-cards
+    .cat-card + .cat-card
     {
-        grid-template-columns: 100%;
-        position: relative;
-    }
-
-    .cat-card
-    {
-        width: 100% - 20px;
+        margin-top: 20px;
     }
 
     .cat-card__photo
