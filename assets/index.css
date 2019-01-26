@@ -6,7 +6,7 @@ body
 .murmarket
 {
     display: grid;
-    grid-template-rows: 80px 1fr auto;
+    grid-template-rows: 80px auto auto;
 }
 
 .murmarket__header
@@ -208,11 +208,17 @@ body
 
 @media only screen and (min-width: 1000px)
 {
+    .murmarket
+    {
+        grid-template-rows: 80px auto 65px;
+    }
+
     .murmarket__content
     {
         display: grid;
         grid-template-columns: 40% 40% auto;
         grid-gap: 20px;
+        min-height: calc(100vh - 80px);
     }
 
     .cat-cards
@@ -222,6 +228,7 @@ body
         display: grid;
         row-gap: 20px;
         column-gap: 20px;
+        grid-auto-rows: 332px;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -352,8 +359,7 @@ body
         box-shadow: 0 0 40px #e5e5e5 inset;
     }
 
-    .breed_scotch:checked + .murmarket__menu .breed_scotch /* почему
-    то не рабоатет */
+    .breed_scotch:checked + .murmarket__menu .breed_scotch
     {
         box-shadow: 0 0 40px #e5e5e5 inset;
     }
